@@ -1,6 +1,8 @@
 document.getElementById("start-btn").addEventListener ("click", startQuiz)
 
-
+var timeEl = document.getElementById("timer");
+var score =0
+var secondsLeft = 90;
 
 function startQuiz (){
     document.getElementById("headerText").classList.add("hide")
@@ -8,9 +10,21 @@ function startQuiz (){
     document.getElementById("question-container").classList.remove("hide")
     document.getElementById("start-btn").classList.add("hide")
     populateQuestion(questions[0])
-    var score =0; 
     startTimer()
 }
+
+function startTimer() {
+    var timerInterval = setInterval(function() {
+      secondsLeft--;
+      timeEl.textContent = secondsLeft + " seconds left.";
+  
+      if(secondsLeft === 0) {
+        clearInterval(timerInterval);
+        endGame()
+      }
+  
+    }, 1000);
+  }
 
 function populateQuestion (questionObject){
     var AnswerEl =document.getElementById("Answers")
@@ -28,6 +42,10 @@ function populateQuestion (questionObject){
 
 function checkAnswer(){
 
+}
+
+function endGame(){
+    
 }
 
 
