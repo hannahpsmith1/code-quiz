@@ -10,18 +10,8 @@ Homework 4 - Creating a Code Quiz for a user
 ## Cool Code! 
 
 ```
-var promptLength = Number (prompt ("Password Length between 8-128 characters"));
-  while (isNaN(promptLength) || promptLength < 8 || promptLength > 128) promptLength = Number(prompt("Length must be 8-128 characters. How many characters would you like your password to be?"));
+++++++++++
 ```
-<p> Both the above and below code snippets are part of the same function, but I wanted to pull them out seperately to highlight the conditions necessary for these to be validators.  In the above example, the identifier <b>Number</b> checks that the prompt entered is a valid number otherwise the code won't run. 
-
-```
-  while (!confirmUpper && !confirmLower && !confirmNum && !confirmSpecial) {
-    alert("You must select at least one character type!");
-```
-
-<p> This condition (part of the same function as above) states that if the user does not select the bool true (okay in the alert) then the password generator cannot run.
-
 
 
 ---
@@ -92,5 +82,5 @@ Within terminal there are several shortcuts you can take to auto-fill values whi
 ## Sources:
 1. My Tutor Christopher Sanner was very helpful in explaining adding to an empty array. 
 2. [w3 schools](https://www.w3schools.com/) This site was my go to when poking around the internet to find things like semantic HTML
-3. Classmates Colin, 
+3. Classmates Colin, and Joel and Isaias for forming a zoom chatroom at 7 pm night of homework and helping me figure out stuff. 
 
