@@ -8,7 +8,8 @@ function startQuiz (){
     document.getElementById("question-container").classList.remove("hide")
     document.getElementById("start-btn").classList.add("hide")
     populateQuestion(questions[0])
-    
+    var score =0; 
+    startTimer()
 }
 
 function populateQuestion (questionObject){
@@ -21,8 +22,15 @@ function populateQuestion (questionObject){
         button.innerHTML = questionObject.answers[i].text
         console.log(questionObject.answers[i])
         AnswerEl.appendChild(button)
+        checkAnswer()
     }
 }
+
+function checkAnswer(){
+
+}
+
+
 
 const questions = [
     {

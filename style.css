@@ -1,6 +1,14 @@
 *, ::before, *::after {
     box-sizing: border-box;
 }
+.timer{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100px;
+    width: 100px;
+
+}
 
 
 body{
@@ -9,7 +17,6 @@ body{
     height: 100vh;
     justify-content: center;
     align-items: center;
-
 }
 
 
@@ -27,10 +34,16 @@ body{
     display: grid;
     grid-template-columns: repeat (2, auto);
     gap: 10px;
-    margin: 20px 0:
+    margin: 20px 0;
 }
 
 .btn {
+    border: 1px solid;
+    padding: 5px 10px;
+    background-color: purple;
+}
+
+.button {
     border: 1px solid;
     padding: 5px 10px;
     background-color: purple;
@@ -40,7 +53,7 @@ body{
     border-color: black;
 }
 
-.start-btn, .next-btn {
+.start-btn {
     font-weight: bold;
     padding: 10px 20px;
 }
