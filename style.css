@@ -50,6 +50,21 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.start-btn {
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: purple;
+    border-radius: 5px;
+}
+
+
 
 body{
     display: flex;
@@ -86,7 +101,7 @@ body{
     color: purple;
 }
 
-.btn {
+/* .btn {
     border: 1px solid;
     padding: 5px 10px;
     background-color: purple;
@@ -96,7 +111,7 @@ body{
     border: 1px solid;
     padding: 5px 10px;
     background-color: purple;
-}
+} */
 
 
 /* .btn:hover {
@@ -107,18 +122,7 @@ body{
     background-color: plum;
 }
 
-.start-btn {
-    font-weight: bold;
-    padding: 10px 20px;
 
-}
-
-.controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
 
 .hide {
     display:none;
