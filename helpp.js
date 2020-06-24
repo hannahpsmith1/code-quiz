@@ -24,6 +24,9 @@ function startTimer() {
         clearInterval(timerInterval);
         endGame()
       }
+      else if (questionNum >= questions.length){
+        clearInterval(timerInterval);
+      }
   
     }, 1000);
   }
@@ -83,12 +86,14 @@ function checkAnswer(){
 
 function endGame(){
     // if count > questions.length;
+    container = document.getElementsByClassName("container")[0];
     document.getElementById("question-container").classList.add("hide")
     var endGame = document.createElement("div");
-    var newContent = document.text("The Quiz Has Ended");
-    endGame.appendChild(newContent);
-    var currentDiv = document.getElementById("endGame"); 
-    document.body.insertBefore(endGame, currentDiv); 
+    // var newContent = createElement(<h1></h1>"The Quiz Has Ended");
+    container.appendChild(endGame);
+    endGame.innerHTML= "All Done! <br></br> your score is " + score + "!"
+    // var currentDiv = document.getElementById("endGame"); 
+    // document.body.insertBefore(endGame, currentDiv); 
 
 
 
