@@ -1,8 +1,10 @@
 document.getElementById("start-btn").addEventListener ("click", startQuiz)
 
 var timeEl = document.getElementById("timer");
-var score =0
-var secondsLeft = 90;
+var score =0;
+var questionNum = 0;
+var secondsLeft = 10;
+
 
 function startQuiz (){
     document.getElementById("headerText").classList.add("hide")
@@ -33,19 +35,56 @@ function populateQuestion (questionObject){
     console.log(questionObject.answers)
     for (i=0; i < questionObject.answers.length; i++){
         var button = document.createElement("button")
+        button.setAttribute("id", i);
         button.innerHTML = questionObject.answers[i].text
         console.log(questionObject.answers[i])
         AnswerEl.appendChild(button)
-        checkAnswer()
+        button.addEventListener("click", checkAnswer)
+        // counter ++
+        // checkAnswer()
+        // selectAnswer()
+        // nextAnswer()
     }
 }
-
+// questionindexcounter 
 function checkAnswer(){
+    // console.log(event.target.id)
+    // console.log(questionNum)
+    // console.log(questions[questionNum].answers[event.target.id])
+    if (questions[questionNum].answers[event.target.id].correct) {
+        score ++;
+        questionNum++;
+        if (questionNum < questions.length) {
+            populateQuestion(questions[questionNum])
+        } else {
+            endGame()
+        }
+    } else {
+        questionNum++;
+        if (questionNum < questions.length) {
+            populateQuestion(questions[questionNum])
+        } else {
+            endGame()
+        }
+    }
+    
+
+
+    // propogate(question)
 
 }
 
 function endGame(){
-    
+    // if count > questions.length;
+    document.getElementById("question-container").classList.add("hide")
+    var endGame = document.createElement("div");
+    var newContent = document.text("The Quiz Has Ended");
+    endGame.appendChild(newContent);
+    var currentDiv = document.getElementById("endGame"); 
+    document.body.insertBefore(endGame, currentDiv); 
+
+
+
 }
 
 

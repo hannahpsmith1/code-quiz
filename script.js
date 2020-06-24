@@ -4,7 +4,7 @@ document.getElementById("start-btn").addEventListener ("click", startQuiz)
 
 function startQuiz (){
     document.getElementById("headerText").classList.add("hide")
-    document.getElementById("supportText").classList.add("hide")
+    document.getElementById("headerText").classList.add("hide")
     document.getElementById("question-container").classList.remove("hide")
     document.getElementById("start-btn").classList.add("hide")
     populateQuestion(questions[0])

@@ -1,42 +1,96 @@
-# 04 Web APIs: Code Quiz
+# password-generator
 
-As you proceed in your career as a web developer, you will probably be asked to complete a coding assessment, which is typically a combination of multiple-choice questions and interactive challenges. Build a timed code quiz with multiple-choice questions. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
+Homework 4 - Creating a Code Quiz for a user
 
-## User Story
 
-```
-AS A coding bootcamp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
-```
+## Deployed Link
+[Live Link](https://hannahpsmith1.github.io/code-quiz/)
 
-## Acceptance Criteria
+
+## Cool Code! 
 
 ```
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and score
+var promptLength = Number (prompt ("Password Length between 8-128 characters"));
+  while (isNaN(promptLength) || promptLength < 8 || promptLength > 128) promptLength = Number(prompt("Length must be 8-128 characters. How many characters would you like your password to be?"));
+```
+<p> Both the above and below code snippets are part of the same function, but I wanted to pull them out seperately to highlight the conditions necessary for these to be validators.  In the above example, the identifier <b>Number</b> checks that the prompt entered is a valid number otherwise the code won't run. 
+
+```
+  while (!confirmUpper && !confirmLower && !confirmNum && !confirmSpecial) {
+    alert("You must select at least one character type!");
 ```
 
-The following animation demonstrates the application functionality:
+<p> This condition (part of the same function as above) states that if the user does not select the bool true (okay in the alert) then the password generator cannot run.
 
-![code quiz](./Assets/04-web-apis-homework-demo.gif)
 
-### Review
 
-You are required to submit the following for review:
+---
 
-* The URL of the functional, deployed application.
+## Prerequisites
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+*Access to the Internet
 
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+*Supported Web Browser
+
+*Github Account
+
+*Terminal (or gitbash)
+
+*Local Disk Storage Capacity 
+
+*VSCode, Sublime Text, or other IDE
+
+---
+
+## Installation
+<p>Execute the following commands in  (Or Gitbash): 
+
+1. ls 
+2. mkdir code-quiz
+3. cd code-quiz
+4. git clone https://github.com/hannahpsmith1/code-quiz.git 
+
+
+
+### Helpful Hints
+Within terminal there are several shortcuts you can take to auto-fill values which makes it easier and faster to go between directories:
+*when changing directories (cd) you can tab over if you have the first few letters of the directory and it will auto-complete the directory you are trying to go into
+*if you hit the up arrow it will bring back the last command you executed (this is helpful if you messed up the command and need to tweek it or if you want to execute the command again)
+
+---
+
+### Installation GIF for visual reference
+<b> Important to note, this is a generic example, not specific to this repository (originally referenced in homework 1)<b>
+
+![Install_Repo](https://user-images.githubusercontent.com/59800839/84457296-2bf62b80-ac17-11ea-9da2-f61f7d13522f.gif)
+
+
+---
+
+## Built With
+[HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+
+[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+
+[JavaScript](https://www.javascript.com/)
+
+---
+
+## Author
+**Hannah Smith**  
+
+*[Portfolio](https://github.com/hannahpsmith1)
+*[Github](https://github.com/hannahpsmith1/password-generator)
+*[LinkedIn](https://www.linkedin.com/in/hannah-patience-smith/)
+
+---
+## Licenses
+*None
+
+
+
+## Sources:
+1. My Tutor Christopher Sanner was very helpful in explaining adding to an empty array. 
+2. [w3 schools](https://www.w3schools.com/) This site was my go to when poking around the internet to find things like semantic HTML
+3. Classmates Colin, 
+
