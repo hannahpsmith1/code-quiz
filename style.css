@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+
 body{
     display: flex;
     width: 100vw;
@@ -10,6 +11,8 @@ body{
     align-items: center;
 
 }
+
+
 
 .container {
     width: 800px;
