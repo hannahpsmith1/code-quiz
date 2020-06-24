@@ -3,7 +3,7 @@ document.getElementById("start-btn").addEventListener ("click", startQuiz)
 var timeEl = document.getElementById("timer");
 var score =0;
 var questionNum = 0;
-var secondsLeft = 10;
+var secondsLeft = 100;
 
 
 function startQuiz (){
@@ -29,10 +29,16 @@ function startTimer() {
   }
 
 function populateQuestion (questionObject){
-    var AnswerEl =document.getElementById("Answers")
+    var AnswerEl = document.getElementById("Answers")
     var QuestionEl = document.getElementById("Question")
     QuestionEl.innerHTML = questionObject.question
-    console.log(questionObject.answers)
+
+    buttons = AnswerEl.getElementsByTagName("button");
+    numButtons = buttons.length
+    for (i=0; i < numButtons; i++){
+        buttons[0].parentNode.removeChild(buttons[0])
+    }
+
     for (i=0; i < questionObject.answers.length; i++){
         var button = document.createElement("button")
         button.setAttribute("id", i);
