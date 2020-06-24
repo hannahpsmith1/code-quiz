@@ -49,13 +49,8 @@ function populateQuestion (questionObject){
         console.log(questionObject.answers[i])
         AnswerEl.appendChild(button)
         button.addEventListener("click", checkAnswer)
-        // counter ++
-        // checkAnswer()
-        // selectAnswer()
-        // nextAnswer()
     }
 }
-// questionindexcounter 
 function checkAnswer(){
     // console.log(event.target.id)
     // console.log(questionNum)
@@ -80,7 +75,7 @@ function checkAnswer(){
     
 
 
-    // propogate(question)
+    
 
 }
 
@@ -90,11 +85,6 @@ function endGame(){
     container.appendChild(endGame);
     endGame.innerHTML= "<h4> All Done! </h4> <br></br> <h4>Your score is " + score + "! </h4>"
     highScore()
-    // highScore()
-    // document.getElementById("highScore").classList.remove("hide")
-    // document.getElementById("nameId").classList.remove("hide")
-    // document.getElementById("add-btn").classList.remove("hide")
-    // document.getElementById("question-container").classList.add("hide")
 }
 
 function highScore (){
@@ -102,7 +92,7 @@ function highScore (){
     document.getElementById("nameId").classList.remove("hide")
     document.getElementById("add-btn").classList.remove("hide")
     document.getElementById("question-container").classList.add("hide")
-    document.getElementsByTagName("container")[0].classList.add("hide")
+
 
 }
 

@@ -10,7 +10,14 @@ Homework 4 - Creating a Code Quiz for a user
 ## Cool Code! 
 
 ```
-++++++++++
+function highScore (){
+    document.getElementById("highScore").classList.remove("hide")
+    document.getElementById("nameId").classList.remove("hide")
+    document.getElementById("add-btn").classList.remove("hide")
+    document.getElementById("question-container").classList.add("hide")
+
+
+}
 ```
 
 
