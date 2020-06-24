@@ -5,18 +5,6 @@
 }
 
 
-/* header {
-    text-align: center;
-    color: tomato;
-    font-family: "Amatic SC", cursive;
-}
-  
-h1 {
-    font-size: 3.5em;
-    vertical-align: top;
-    display:inline-block;
-} */
-
 .timer{
     position: absolute;
     right: 0;
@@ -36,7 +24,6 @@ h1 {
 
 
 .header{
-    /* color: white; */
     position: absolute;
     top: 30%;
     left: 50%;
@@ -74,49 +61,13 @@ body{
     align-items: center;
 }
 
-
-/* p{
-    
-} */
-
-/* .AnswerEl{
-    background-color: purple;
-} */
-
-
-/* .container {
-    width: 800px;
-    max-width: 80%;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 0 10px 2px;
-
-} */
-
 .btn-grid {
     display: grid;
     /* grid-template-columns: repeat (2, auto); */
     gap: 10px;
     margin: 20px 0;
-    color: purple;
 }
 
-/* .btn {
-    border: 1px solid;
-    padding: 5px 10px;
-    background-color: purple;
-}
-
-.button {
-    border: 1px solid;
-    padding: 5px 10px;
-    background-color: purple;
-} */
-
-
-/* .btn:hover {
-    border-color: black;
-} */
 
 .btn:active {
     background-color: plum;
