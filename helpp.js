@@ -67,6 +67,7 @@ function checkAnswer(){
         }
     } else {
         questionNum++;
+        secondsLeft =secondsLeft -5;
         if (questionNum < questions.length) {
             populateQuestion(questions[questionNum])
         } else {
