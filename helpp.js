@@ -88,26 +88,21 @@ function endGame(){
     container = document.getElementsByClassName("container")[0];
     var endGame = document.createElement("div");
     container.appendChild(endGame);
-    endGame.innerHTML= "All Done! <br></br> your score is " + score + "!"
+    endGame.innerHTML= "<h4> All Done! </h4> <br></br> <h4>Your score is " + score + "! </h4>"
+    highScore()
+    // highScore()
+    // document.getElementById("highScore").classList.remove("hide")
+    // document.getElementById("nameId").classList.remove("hide")
+    // document.getElementById("add-btn").classList.remove("hide")
+    // document.getElementById("question-container").classList.add("hide")
+}
+
+function highScore (){
     document.getElementById("highScore").classList.remove("hide")
     document.getElementById("nameId").classList.remove("hide")
     document.getElementById("add-btn").classList.remove("hide")
     document.getElementById("question-container").classList.add("hide")
-    // if count > questions.length;
-    // container =
-
-
-    // // if count > questions.length;
-    // form = document.getElementsByClassName("container")[0];
-    // document.getElementById("question-container").classList.add("hide")
-    // var endGame = document.createElement("div");
-    // // var newContent = createElement(<h1></h1>"The Quiz Has Ended");
-    // container.appendChild(endGame);
-    // endGame.innerHTML= "All Done! <br></br> "your score is " + score "!"
-    // // var currentDiv = document.getElementById("endGame"); 
-    // // document.body.insertBefore(endGame, currentDiv); 
-
-
+    document.getElementsByTagName("container")[0].classList.add("hide")
 
 }
 
