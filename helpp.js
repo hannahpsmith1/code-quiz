@@ -85,15 +85,27 @@ function checkAnswer(){
 }
 
 function endGame(){
-    // if count > questions.length;
     container = document.getElementsByClassName("container")[0];
-    document.getElementById("question-container").classList.add("hide")
     var endGame = document.createElement("div");
-    // var newContent = createElement(<h1></h1>"The Quiz Has Ended");
     container.appendChild(endGame);
     endGame.innerHTML= "All Done! <br></br> your score is " + score + "!"
-    // var currentDiv = document.getElementById("endGame"); 
-    // document.body.insertBefore(endGame, currentDiv); 
+    document.getElementById("highScore").classList.remove("hide")
+    document.getElementById("nameId").classList.remove("hide")
+    document.getElementById("add-btn").classList.remove("hide")
+    document.getElementById("question-container").classList.add("hide")
+    // if count > questions.length;
+    // container =
+
+
+    // // if count > questions.length;
+    // form = document.getElementsByClassName("container")[0];
+    // document.getElementById("question-container").classList.add("hide")
+    // var endGame = document.createElement("div");
+    // // var newContent = createElement(<h1></h1>"The Quiz Has Ended");
+    // container.appendChild(endGame);
+    // endGame.innerHTML= "All Done! <br></br> "your score is " + score "!"
+    // // var currentDiv = document.getElementById("endGame"); 
+    // // document.body.insertBefore(endGame, currentDiv); 
 
 
 

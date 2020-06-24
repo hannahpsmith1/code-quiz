@@ -1,6 +1,22 @@
-*, ::before, *::after {
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
+
+/* header {
+    text-align: center;
+    color: tomato;
+    font-family: "Amatic SC", cursive;
+}
+  
+h1 {
+    font-size: 3.5em;
+    vertical-align: top;
+    display:inline-block;
+} */
+
 .timer{
     position: absolute;
     right: 0;
@@ -8,6 +24,30 @@
     height: 100px;
     width: 100px;
 
+}
+
+.highScores{
+    position: absolute;
+    left:0;
+    top: 0;
+    height: 100px;
+    width: 100px;
+}
+
+
+.header{
+    /* color: white; */
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#supportText{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -20,21 +60,30 @@ body{
 }
 
 
+/* p{
+    
+} */
 
-.container {
+/* .AnswerEl{
+    background-color: purple;
+} */
+
+
+/* .container {
     width: 800px;
     max-width: 80%;
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px 2px;
 
-}
+} */
 
 .btn-grid {
     display: grid;
-    grid-template-columns: repeat (2, auto);
+    /* grid-template-columns: repeat (2, auto); */
     gap: 10px;
     margin: 20px 0;
+    color: purple;
 }
 
 .btn {
@@ -49,19 +98,26 @@ body{
     background-color: purple;
 }
 
-.btn:hover {
+
+/* .btn:hover {
     border-color: black;
+} */
+
+.btn:active {
+    background-color: plum;
 }
 
 .start-btn {
     font-weight: bold;
     padding: 10px 20px;
+
 }
 
 .controls {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .hide {

@@ -8,15 +8,28 @@
     <script defer src = "helpp.js"></script>
 </head>
 <body>
-    <div id = "headerText" class ="header">some text</div>
-    <div id = "supportText" class = "p">detail text</div>
+    <div id = "headerText" class ="header"><h1>Welcome to the code quiz!</h1></div>
+    <div id = "supportText"><p>The following quiz will test your pop culture knowledge</p></div>
     <div id = "timer" class ="timer">timer</div>
+    <div class = "highScores" href = "#">High Scores</div>
     <div class ="container">
         <div id = "question-container" class = "hide">
             <div id = "Question">Question1</div>
             <div id = "Answers" class="btn-grid">
             </div>
         </div>
+        <form>
+            <div id ="highScore" class = "hide"><h4>High Scores</h4></div>
+            <input placeholder="initials" id="nameId" class = "hide" />
+            <button id="add-btn" class = "hide">Add Score</button>
+            <!-- <label for="todo-text">Add a Todo:</label> -->
+            <!-- <input type="text" placeholder="What needs to be done?" name="todo-text" id="todo-text" /> -->
+          </form>
+        <!-- <div id = "question-container" class = "hide">
+            <div id = "Question">Question1</div>
+            <div id = "Answers" class="btn-grid">
+            </div>
+        </div> -->
         <div class = "controls" >
             <button id = "start-btn" class= "start-btn btn">Start</button>
         </div>
@@ -25,3 +38,11 @@
 </body>
 </html>
 
+<!-- <div class="todos">
+    <form id="todo-form" method="POST">
+      <label for="todo-text">Add a Todo:</label>
+      <input type="text" placeholder="What needs to be done?" name="todo-text" id="todo-text" />
+    </form>
+    <p>Todo Count: <span id="todo-count">0</span></p>
+    <ul id="todo-list"></ul>
+  </div> -->
